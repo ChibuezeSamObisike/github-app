@@ -1,0 +1,224 @@
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  /* background-color: ; */
+  color: white;
+  height: 100vh;
+}
+
+.main_div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+input {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: var(--clr-font);
+  font-family: "Space Mono", monospace;
+}
+
+input::placeholder {
+  color: var(--clr-font);
+  font-family: "Space Mono", monospace;
+}
+
+.input_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--clr-primary);
+  padding: 15px;
+  border-radius: 5px;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  scale: 1.2;
+  opacity: 0.8;
+}
+
+.btn_primary {
+  background-color: #0079ff;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 7px;
+}
+
+.card_main {
+  display: flex;
+  margin-top: 20px;
+  background-color: var(--clr-primary);
+  padding: 20px;
+  border-radius: 7px;
+}
+
+.detailsndDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profileDetails {
+  background-color: var(--clr-bcg);
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.socialMediaDiv {
+  padding: 2px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.socialDetailsDiv {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.p-profile {
+  margin-top: 10px;
+  opacity: 60%;
+}
+
+.socialDetailsDiv > p {
+  margin: 0 10px;
+  font-size: 12px;
+}
+
+.socialDetailsDiv > a {
+  margin: 0 10px;
+  font-size: 12px;
+}
+
+a:hover {
+  text-decoration: underline;
+  font-size: 12px;
+}
+
+.btn-p {
+  outline: none;
+  background-color: transparent;
+  border: none;
+  color: var(--clr-font);
+}
+
+.btn-p:focus {
+  outline: none;
+  background-color: transparent;
+  border: none;
+}
+
+.img-profile {
+  border-radius: 50%;
+  width: 100px;
+}
+
+.not-found {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socialDiv {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.detailsCardDiv {
+  background-color: "#141D2F";
+  border-radius: 8px;
+  width: 100%;
+}
+
+.p-sm {
+  font-size: 12px;
+}
+
+.App-child {
+  width: 45%;
+}
+
+.socialDetailsDiv > svg path {
+  fill: var(--clr-font);
+}
+
+.loader-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  height: 100%;
+  align-items: center;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  /* Light grey */
+  border-top: 16px solid #3498db;
+  /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .App-child {
+    width: 70%;
+  }
+  .card_main,
+  .detailsndDiv,
+  .profileDetails,
+  .socialDiv {
+    flex-direction: column;
+    align-items: center;
+  }
+  .profileInfo {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .profileInfo > h4 {
+    margin-left: 10px;
+  }
+  .socialDiv {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .p-profile {
+    text-align: center;
+  }
+  .detailsndDiv > div > h5 {
+    margin-left: 17px;
+  }
+}
